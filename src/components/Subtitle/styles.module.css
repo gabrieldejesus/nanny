@@ -1,0 +1,7 @@
+.subtitle {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: var(--dark-grey);
+}

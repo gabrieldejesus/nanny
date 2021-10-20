@@ -1,0 +1,19 @@
+.container {
+  width: 1084px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+  .container {
+    margin: 0 16px;
+  }
+}
+
+/* Extra large devices (large desktops, 1116px and up) */
+@media (min-width: 1116px) {
+  .container {
+    margin: 0;
+  }
+}

@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "aos": "2.3.4",
+    "classnames": "2.3.1",
     "is-absolute-url": "3.0.3",
     "next": "11.0.1",
     "nprogress": "0.2.0",
@@ -40,6 +41,7 @@
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
     "@types/aos": "3.0.4",
+    "@types/classnames": "2.3.1",
     "@types/node": "14.17.5",
     "@types/nprogress": "0.2.0",
     "@types/react": "17.0.14",

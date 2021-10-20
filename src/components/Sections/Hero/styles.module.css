@@ -1,0 +1,53 @@
+.section {
+  display: flex;
+  justify-content: center;
+  min-height: 552px;
+}
+
+.container {
+  align-items: center;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: var(--white);
+  max-width: 490px;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: var(--white);
+  max-width: 584px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: var(--white);
+  text-decoration: underline;
+  margin-top: 40px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.play {
+  margin-right: 16px;
+}

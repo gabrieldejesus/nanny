@@ -1,11 +1,22 @@
-import { SEO } from '@/components';
+import { Header, SEO } from '@/components';
+import { AvailableNow, Hero, ShareYourHome } from '@/components/Sections';
+
+import styles from '@/styles/pages/home.module.css';
 
 export default function Home() {
   return (
     <>
       <SEO />
 
-      <h1>Easily create or join a local nanny share with Hapu</h1>
+      <div className={styles.bg}>
+        <Header />
+
+        <Hero />
+      </div>
+
+      <AvailableNow />
+
+      <ShareYourHome />
     </>
   );
 }

@@ -1,0 +1,41 @@
+/* Underline Effect */
+.underline {
+  width: fit-content;
+  position: relative;
+  text-decoration: none !important;
+}
+
+.underline:hover {
+  text-decoration: none !important;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: var(--green);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@keyframes background-animation {
+  0% {
+    background-size: 650%;
+  }
+  50% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
