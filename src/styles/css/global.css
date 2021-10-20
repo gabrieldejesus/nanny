@@ -1,0 +1,140 @@
+@import './nprogress.css';
+@import './toastify.css';
+
+:root {
+  --green: #00a870;
+  --purple: #5e20a4;
+  --white: #ffffff;
+  --black: #000000;
+  ---grey: #dfdfdf;
+  --red: #bb2727;
+  --dark-grey: #3d3d3d;
+  --background: #faf9f7;
+  --scrollbar-background: transparent;
+
+  --font-text: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--green);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: unset;
+  -webkit-text-fill-color: var(--white);
+  transition: background 4000s ease-in-out 0s;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe,
+hr {
+  border: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+  scrollbar-width: 6px;
+  background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+}

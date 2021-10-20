@@ -1,0 +1,18 @@
+.Toastify__toast--success,
+.Toastify__toast--default {
+  background: var(--green);
+}
+
+.toastify__toast--default,
+.Toastify__toast-body,
+.Toastify__close-button {
+  color: var(--white);
+}
+
+.Toastify__progress-bar--animated {
+  background: #ffffffb3;
+}
+
+.Toastify__toast--error {
+  background: var(--red);
+}
