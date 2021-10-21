@@ -20,12 +20,12 @@ export default function Home() {
       <div className={styles.bg}>
         <Header />
 
-        {/* <Hero /> */}
+        <Hero />
       </div>
 
-      {/* <AvailableNow />
+      <AvailableNow />
 
-      <ShareYourHome />
+      {/*<ShareYourHome />
 
       <Newsletter />
 

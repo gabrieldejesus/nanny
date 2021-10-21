@@ -40,7 +40,7 @@ export default function Hero() {
           </Link>
         </div>
 
-        <div data-aos-delay="100" data-aos="zoom-in">
+        <div className={styles.image} data-aos-delay="100" data-aos="zoom-in">
           <Image
             width={316}
             height={290}
