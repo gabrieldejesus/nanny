@@ -1,17 +1,38 @@
 import { Button } from 'reakit';
-import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { toast } from 'react-toastify';
+import * as Yup from 'yup';
 
 import { Container, Paragraph, Separator, Subtitle } from '@/components';
 
 import styles from './styles.module.css';
 
-export default function Newsletter() {
-  const { register, handleSubmit } = useForm();
-  const [result, setResult] = useState(``);
+export type RequestData = {
+  name: string;
+  email: string;
+};
 
-  const onSubmit = (data: any) => setResult(JSON.stringify(data));
-  console.log({ result });
+export default function Newsletter() {
+  // form validation rules
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required(`Name is required`),
+    email: Yup.string().required(`Email is required`).email(`Email is invalid`),
+  });
+
+  const formOptions = { resolver: yupResolver(validationSchema) };
+
+  const { register, handleSubmit } = useForm(formOptions);
+
+  async function onSubmit(data: RequestData) {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`, {
+      method: `POST`,
+      body: JSON.stringify(data, null, 4),
+      headers: {
+        'Content-Type': `application/json`,
+      },
+    });
+  }
 
   return (
     <section className={styles.section}>
@@ -37,12 +58,11 @@ export default function Newsletter() {
         >
           <input
             type="text"
-            {...register(`name`)}
             placeholder="Your name"
+            {...register(`name`)}
             className={styles.input}
             required
           />
-
           <input
             type="email"
             {...register(`email`)}
@@ -50,7 +70,6 @@ export default function Newsletter() {
             className={styles.input}
             required
           />
-
           <Button type="submit" className={styles.button}>
             Send
           </Button>
