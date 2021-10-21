@@ -1,0 +1,15 @@
+.separator {
+  height: 2px;
+  width: 100%;
+  max-width: 784px;
+  position: absolute;
+  background: var(--grey);
+}
+
+.top {
+  top: 0;
+}
+
+.down {
+  bottom: 0;
+}

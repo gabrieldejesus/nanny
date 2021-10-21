@@ -1,5 +1,12 @@
 import { Header, SEO } from '@/components';
-import { AvailableNow, Hero, ShareYourHome } from '@/components/Sections';
+import {
+  AvailableNow,
+  Framework,
+  Hero,
+  Newsletter,
+  PaymentsSimple,
+  ShareYourHome,
+} from '@/components/Sections';
 
 import styles from '@/styles/pages/home.module.css';
 
@@ -17,6 +24,12 @@ export default function Home() {
       <AvailableNow />
 
       <ShareYourHome />
+
+      <Newsletter />
+
+      <PaymentsSimple />
+
+      <Framework />
     </>
   );
 }

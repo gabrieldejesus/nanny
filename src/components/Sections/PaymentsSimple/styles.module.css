@@ -1,0 +1,29 @@
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 96px 0;
+}
+
+.container {
+  align-items: center;
+}
+
+.subtitle {
+  margin-bottom: 40px;
+}
+
+.paragraph {
+  max-width: 484px;
+  margin-bottom: 40px;
+}
+
+.link {
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
