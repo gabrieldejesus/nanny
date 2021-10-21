@@ -1,0 +1,20 @@
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 96px 0 120px 0;
+}
+
+.container {
+  align-items: center;
+  flex-direction: column;
+}
+
+.image,
+.subtitle {
+  margin-bottom: 40px;
+}
+
+.paragraph {
+  max-width: 784px;
+  text-align: center;
+}

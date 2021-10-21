@@ -1,8 +1,10 @@
 import { Header, SEO } from '@/components';
 import {
   AvailableNow,
+  Footer,
   Framework,
   Hero,
+  NannyShare,
   Newsletter,
   PaymentsSimple,
   ShareYourHome,
@@ -30,6 +32,10 @@ export default function Home() {
       <PaymentsSimple />
 
       <Framework />
+
+      <NannyShare />
+
+      <Footer />
     </>
   );
 }
