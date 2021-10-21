@@ -47,7 +47,7 @@ export default function Footer() {
         </Paragraph>
 
         <Link href="/">
-          <a className={styles.button}>
+          <a className={styles.button} data-aos-delay="200" data-aos="fade-up">
             <Calendar className={styles.icon} />
 
             <div className={styles.texts}>
@@ -60,7 +60,9 @@ export default function Footer() {
         </Link>
 
         <Link href="/">
-          <a className={styles.link}>Or browse local nanny-shares</a>
+          <a className={styles.link} data-aos-delay="200" data-aos="fade-up">
+            Or browse local nanny-shares
+          </a>
         </Link>
 
         <div className={styles.menu}>

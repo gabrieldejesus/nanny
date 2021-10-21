@@ -9,15 +9,17 @@ export default function PaymentsSimple() {
   return (
     <div className={styles.section}>
       <Container className={styles.container}>
-        <Image
-          width={456}
-          height={336}
-          quality={100}
-          objectFit="cover"
-          src="/images/home/payments-simple.png"
-          alt='An example of how the payment method shared between: "fixed amount" or "shared rates" is simplified'
-          title='An example of how the payment method shared between: "fixed amount" or "shared rates" is simplified'
-        />
+        <div data-aos-delay="100" data-aos="zoom-in">
+          <Image
+            width={456}
+            height={336}
+            quality={100}
+            objectFit="cover"
+            src="/images/home/payments-simple.png"
+            alt='An example of how the payment method shared between: "fixed amount" or "shared rates" is simplified'
+            title='An example of how the payment method shared between: "fixed amount" or "shared rates" is simplified'
+          />
+        </div>
 
         <div className={styles.content}>
           <Subtitle className={styles.subtitle}>
@@ -33,7 +35,7 @@ export default function PaymentsSimple() {
           </Paragraph>
 
           <Link href="/">
-            <a className={styles.link}>
+            <a className={styles.link} data-aos-delay="200" data-aos="fade-up">
               Read how Bridget’s share (without Hapu) ended over $15
             </a>
           </Link>

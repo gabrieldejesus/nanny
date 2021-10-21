@@ -23,21 +23,23 @@ export default function Framework() {
           </Paragraph>
 
           <Link href="/">
-            <a className={styles.link}>
+            <a className={styles.link} data-aos-delay="200" data-aos="fade-up">
               Read how Hapu’s tribal background defines our app{' '}
             </a>
           </Link>
         </div>
 
-        <Image
-          width={984}
-          height={392}
-          quality={100}
-          objectFit="cover"
-          src="/images/home/billing-history.png"
-          alt="An example your billing history with days, times, amount paid, date and actions"
-          title="An example your billing history with days, times, amount paid, date and actions"
-        />
+        <div data-aos-delay="100" data-aos="zoom-in">
+          <Image
+            width={984}
+            height={392}
+            quality={100}
+            objectFit="cover"
+            src="/images/home/billing-history.png"
+            alt="An example your billing history with days, times, amount paid, date and actions"
+            title="An example your billing history with days, times, amount paid, date and actions"
+          />
+        </div>
       </Container>
       <Separator direction="down" />
     </div>

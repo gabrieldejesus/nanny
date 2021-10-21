@@ -8,7 +8,7 @@ export default function NannyShare() {
   return (
     <section className={styles.section}>
       <Container className={styles.container}>
-        <div className={styles.image}>
+        <div className={styles.image} data-aos-delay="100" data-aos="zoom-in">
           <Image
             width={216}
             height={96}

@@ -9,7 +9,12 @@ export default function Paragraph({
   ...rest
 }: HTMLAttributes<HTMLElement>) {
   return (
-    <p {...rest} className={cn(styles.paragraph, className)}>
+    <p
+      {...rest}
+      className={cn(styles.paragraph, className)}
+      data-aos-delay="150"
+      data-aos="fade-up"
+    >
       {children}
     </p>
   );

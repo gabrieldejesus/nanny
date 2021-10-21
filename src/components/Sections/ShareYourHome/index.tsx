@@ -29,19 +29,23 @@ export default function ShareYourHome() {
           </Paragraph>
 
           <Link href="/">
-            <a className={styles.link}>Ready to get started?</a>
+            <a className={styles.link} data-aos-delay="200" data-aos="fade-up">
+              Ready to get started?
+            </a>
           </Link>
         </div>
 
-        <Image
-          width={584}
-          height={392}
-          quality={100}
-          objectFit="cover"
-          src="/images/home/share-your-home.png"
-          alt="An example of jane ongoing nanny share"
-          title="An example of jane ongoing nanny share"
-        />
+        <div data-aos-delay="100" data-aos="zoom-in">
+          <Image
+            width={584}
+            height={392}
+            quality={100}
+            objectFit="cover"
+            src="/images/home/share-your-home.png"
+            alt="An example of jane ongoing nanny share"
+            title="An example of jane ongoing nanny share"
+          />
+        </div>
       </Container>
     </section>
   );

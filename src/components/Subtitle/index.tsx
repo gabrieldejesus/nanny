@@ -9,7 +9,12 @@ export default function Subtitle({
   ...rest
 }: HTMLAttributes<HTMLElement>) {
   return (
-    <h3 {...rest} className={cn(styles.subtitle, className)}>
+    <h3
+      {...rest}
+      className={cn(styles.subtitle, className)}
+      data-aos-delay="100"
+      data-aos="fade-up"
+    >
       {children}
     </h3>
   );

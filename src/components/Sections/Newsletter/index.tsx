@@ -29,7 +29,12 @@ export default function Newsletter() {
           </Paragraph>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className={styles.form}
+          data-aos-delay="200"
+          data-aos="fade-up"
+        >
           <input
             type="text"
             {...register('name')}
