@@ -20,10 +20,10 @@ export default function Home() {
       <div className={styles.bg}>
         <Header />
 
-        <Hero />
+        {/* <Hero /> */}
       </div>
 
-      <AvailableNow />
+      {/* <AvailableNow />
 
       <ShareYourHome />
 
@@ -35,7 +35,7 @@ export default function Home() {
 
       <NannyShare />
 
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
