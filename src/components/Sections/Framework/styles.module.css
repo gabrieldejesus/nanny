@@ -1,7 +1,6 @@
 .section {
   display: flex;
   justify-content: center;
-  padding: 96px 0 104px 0;
   position: relative;
 }
 
@@ -15,17 +14,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 64px;
-}
-
-.subtitle {
-  margin-bottom: 40px;
 }
 
 .paragraph {
   max-width: 784px;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .link {
@@ -37,4 +30,64 @@
 
 .link:hover {
   text-decoration: underline;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .headline {
+    text-align: center;
+  }
+
+  .subtitle {
+    max-width: 243px;
+    margin-bottom: 16px;
+  }
+
+  .paragraph {
+    margin-bottom: 28px;
+  }
+
+  .link {
+    max-width: 272px;
+    text-align: center;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .subtitle {
+    max-width: unset;
+    margin-bottom: 40px;
+  }
+
+  .paragraph {
+    margin-bottom: 40px;
+  }
+
+  .link {
+    max-width: unset;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .section {
+    padding: 96px 0 104px 0;
+  }
+
+  .headline {
+    margin-bottom: 64px;
+  }
+
+  .image {
+    display: flex;
+  }
 }

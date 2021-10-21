@@ -1,7 +1,6 @@
 .section {
   display: flex;
   justify-content: center;
-  padding: 96px 0 120px 0;
 }
 
 .container {
@@ -17,4 +16,40 @@
 .paragraph {
   max-width: 784px;
   text-align: center;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .image {
+    margin-bottom: 24px;
+  }
+
+  .subtitle {
+    max-width: 290px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .subtitle {
+    max-width: unset;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .section {
+    padding: 96px 0 120px 0;
+  }
+
+  .image,
+  .subtitle {
+    margin-bottom: 40px;
+  }
 }

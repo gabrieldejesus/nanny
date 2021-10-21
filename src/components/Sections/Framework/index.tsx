@@ -29,7 +29,7 @@ export default function Framework() {
           </Link>
         </div>
 
-        <div data-aos-delay="100" data-aos="zoom-in">
+        <div data-aos-delay="100" data-aos="zoom-in" className={styles.image}>
           <Image
             width={984}
             height={392}

@@ -31,11 +31,11 @@ export default function Home() {
 
       <PaymentsSimple />
 
-      {/* <Framework />
+      <Framework />
 
       <NannyShare />
 
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

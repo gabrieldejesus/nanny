@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   background: var(--white);
-  padding: 80px 0 32px 0;
 }
 
 .container {
@@ -10,13 +9,7 @@
   flex-direction: column;
 }
 
-.subtitle {
-  margin-bottom: 16px;
-}
-
 .paragraph {
-  font-size: 18px;
-  line-height: 24px;
   margin-bottom: 32px;
 }
 
@@ -25,7 +18,6 @@
   align-items: center;
   background: var(--purple);
   border-radius: 4px;
-  padding: 14px 30px;
   max-width: 304px;
 }
 
@@ -71,15 +63,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 72px 0 75px 0;
-}
-
-.list {
-  display: flex;
-}
-
-.item + .item {
-  margin-left: 30px;
 }
 
 .itemLink {
@@ -129,4 +112,110 @@
   font-size: 12px;
   line-height: 16px;
   color: var(--dark-grey);
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+  .footer {
+    padding: 40px 0 24px 0;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .button {
+    padding: 14px 22px;
+  }
+
+  .menu {
+    flex-direction: column;
+    padding: 48px 0 40px 0;
+  }
+
+  .list {
+    gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 32px;
+  }
+
+  .item {
+    text-align: center;
+  }
+
+  .socialNetworks {
+    margin-top: 24px;
+  }
+
+  .copy {
+    padding-top: 24px;
+    text-align: center;
+    border-top: 1px solid var(--grey);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .button {
+    padding: 14px 30px;
+  }
+
+  .list {
+    gap: unset;
+    display: flex;
+    grid-template-columns: unset;
+  }
+
+  .item + .item {
+    margin-left: 30px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .footer {
+    padding: 80px 0 32px 0;
+  }
+
+  .subtitle {
+    margin-bottom: 16px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .menu {
+    padding: 72px 0 75px 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .menu {
+    flex-direction: row;
+  }
+
+  .list,
+  .socialNetworks {
+    margin: 0;
+  }
+
+  .list {
+    padding-left: 114px;
+  }
+
+  .copy {
+    padding: 0;
+    border-top: unset;
+  }
 }
