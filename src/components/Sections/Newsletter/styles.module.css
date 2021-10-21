@@ -31,7 +31,6 @@
 .form {
   display: flex;
   align-items: center;
-  margin-top: 74px;
 }
 
 .input {
@@ -40,6 +39,7 @@
   border-radius: 4px;
   padding: 14px 20px;
   color: var(--dark-grey);
+  background: var(--white);
   transition: all ease 0.3s;
   outline-color: var(--green);
   border: 1px solid var(--grey);
@@ -49,19 +49,76 @@
   color: var(--dark-grey);
 }
 
-.input + .input {
-  margin-left: 12px;
-}
-
 .button {
   border: 0;
-  width: 96px;
   height: 48px;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   color: var(--white);
   border-radius: 4px;
-  margin-left: 12px;
   background: var(--green);
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+  .subtitle,
+  .paragraph {
+    max-width: 328px;
+    text-align: center;
+  }
+
+  .form {
+    margin-top: 32px;
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .input + .input {
+    margin-top: 10px;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .subtitle {
+    max-width: unset;
+  }
+
+  .paragraph {
+    max-width: 500px;
+  }
+
+  .form {
+    margin-top: 74px;
+    flex-direction: row;
+  }
+
+  .input {
+    width: 232px;
+  }
+
+  .input + .input {
+    margin: 0 0 0 12px;
+  }
+
+  .button {
+    width: 96px;
+    margin: 0 0 0 12px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .paragraph {
+    max-width: unset;
+  }
 }

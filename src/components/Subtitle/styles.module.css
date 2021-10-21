@@ -1,6 +1,20 @@
 .subtitle {
-  font-size: 28px;
   font-weight: 500;
-  line-height: 32px;
   color: var(--dark-grey);
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+  .subtitle {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }

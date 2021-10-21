@@ -25,13 +25,13 @@ export default function Home() {
 
       <AvailableNow />
 
-      {/*<ShareYourHome />
+      <ShareYourHome />
 
       <Newsletter />
 
       <PaymentsSimple />
 
-      <Framework />
+      {/* <Framework />
 
       <NannyShare />
 
