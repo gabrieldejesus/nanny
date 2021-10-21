@@ -5,8 +5,8 @@ import cn from 'classnames';
 import { Container } from '@/components';
 import { Logo } from '@/components/Logos';
 
-import styles from './styles.module.css';
 import animated from '@/styles/animated/styles.module.css';
+import styles from './styles.module.css';
 
 export default function Header() {
   return (

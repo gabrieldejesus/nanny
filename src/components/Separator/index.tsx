@@ -8,7 +8,5 @@ export type SeparatorProps = {
 };
 
 export default function Separator({ direction, className }: SeparatorProps) {
-  return (
-    <hr className={cn(styles.separator, styles[direction], className)}></hr>
-  );
+  return <hr className={cn(styles.separator, styles[direction], className)} />;
 }

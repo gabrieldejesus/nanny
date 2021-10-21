@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 export default function Newsletter() {
   const { register, handleSubmit } = useForm();
-  const [result, setResult] = useState('');
+  const [result, setResult] = useState(``);
 
   const onSubmit = (data: any) => setResult(JSON.stringify(data));
   console.log({ result });
@@ -37,7 +37,7 @@ export default function Newsletter() {
         >
           <input
             type="text"
-            {...register('name')}
+            {...register(`name`)}
             placeholder="Your name"
             className={styles.input}
             required
@@ -45,7 +45,7 @@ export default function Newsletter() {
 
           <input
             type="email"
-            {...register('email')}
+            {...register(`email`)}
             placeholder="Your email"
             className={styles.input}
             required

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 // Geral
 export { default as Container } from '@/components/Container';
 export { default as Header } from '@/components/Header';

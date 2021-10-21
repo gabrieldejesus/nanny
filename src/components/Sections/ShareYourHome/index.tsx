@@ -18,10 +18,11 @@ export default function ShareYourHome() {
             You have a fantastic home, a fantastic nanny and wouldn’t cutting
             your costs in half be, well, fantastic?! If only it was easy to
             connect with other parents to share your costs? Well now it is, with
-            Hapu.{' '}
+            Hapu.{` `}
             <Link href="/">
               <a>Hapu means tribe</a>
-            </Link>{' '}
+            </Link>
+            {` `}
             and it’s our foundational 3 tribal principles that empowers you to
             create and manage your own tribe. A tribe that together has the
             power to create new affordable solutions in childcare that work for

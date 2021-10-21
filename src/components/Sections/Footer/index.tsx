@@ -2,13 +2,12 @@ import Link from 'next/link';
 import cn from 'classnames';
 import { ElementType } from 'react';
 
-import { Calendar } from '@/components/Icons';
+import { Calendar, Facebook, Instagram, Twitter } from '@/components/Icons';
 import { Container, Paragraph, Subtitle } from '@/components';
 import { Hapu } from '@/components/Logos';
-import { Facebook, Instagram, Twitter } from '@/components/Icons';
 
-import styles from './styles.module.css';
 import animated from '@/styles/animated/styles.module.css';
+import styles from './styles.module.css';
 
 export type SocialProps = {
   name: string;
@@ -18,18 +17,18 @@ export type SocialProps = {
 
 const socialNetworks: SocialProps[] = [
   {
-    name: 'Facebook',
-    url: 'http://',
+    name: `Facebook`,
+    url: `http://`,
     icon: Facebook,
   },
   {
-    name: 'Instagram',
-    url: 'http://',
+    name: `Instagram`,
+    url: `http://`,
     icon: Instagram,
   },
   {
-    name: 'Twitter',
-    url: 'http://',
+    name: `Twitter`,
+    url: `http://`,
     icon: Twitter,
   },
 ];

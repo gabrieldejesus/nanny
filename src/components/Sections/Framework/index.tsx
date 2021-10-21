@@ -24,7 +24,7 @@ export default function Framework() {
 
           <Link href="/">
             <a className={styles.link} data-aos-delay="200" data-aos="fade-up">
-              Read how Hapu’s tribal background defines our app{' '}
+              Read how Hapu’s tribal background defines our app{` `}
             </a>
           </Link>
         </div>
