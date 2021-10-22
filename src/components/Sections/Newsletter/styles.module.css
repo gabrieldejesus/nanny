@@ -33,6 +33,18 @@
   align-items: center;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.error {
+  font-size: 12px;
+  line-height: 16px;
+  position: absolute;
+}
+
 .input {
   font-size: 14px;
   line-height: 20px;
@@ -57,7 +69,6 @@
   line-height: 20px;
   color: var(--white);
   border-radius: 4px;
-  background: var(--green);
 }
 
 /* Extra small devices */
@@ -77,13 +88,17 @@
     width: 100%;
   }
 
-  .input + .input {
-    margin-top: 10px;
+  .wrapper + .wrapper {
+    margin-top: 24px;
   }
 
   .button {
     width: 100%;
     margin-top: 18px;
+  }
+
+  .error {
+    top: -16px;
   }
 }
 
@@ -106,8 +121,12 @@
     width: 232px;
   }
 
-  .input + .input {
+  .wrapper + .wrapper {
     margin: 0 0 0 12px;
+  }
+
+  .error {
+    top: -24px;
   }
 
   .button {

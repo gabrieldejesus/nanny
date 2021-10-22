@@ -129,12 +129,12 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
   height: 0;
   scrollbar-width: 6px;
   background: var(--scrollbar-background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar);
+  background: var(--green);
 }

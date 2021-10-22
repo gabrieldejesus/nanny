@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ReakitProvider>
-      <ToastContainer transition={Slide} />
+      <ToastContainer transition={Slide} position="bottom-left" />
       <Component {...pageProps} />
     </ReakitProvider>
   );

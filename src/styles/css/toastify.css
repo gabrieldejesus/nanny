@@ -1,5 +1,6 @@
 .Toastify__toast--success,
 .Toastify__toast--default {
+  height: 80px;
   background: var(--green);
 }
 
