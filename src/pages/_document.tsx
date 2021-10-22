@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-sync-scripts */
+/* eslint-disable @next/next/no-css-tags */
 import Document, {
   Html,
   Head,
@@ -27,6 +29,9 @@ export default class MyDocument extends Document<DocumentProps> {
           <noscript>
             <link href="./styles/aos-noscript.css" rel="stylesheet" />
           </noscript>
+
+          {/* Google Optimize */}
+          <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KL3VJBM" />
         </Head>
 
         <body>
