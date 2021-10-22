@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 /* eslint-disable @next/next/no-sync-scripts */
 /* eslint-disable @next/next/no-css-tags */
 import Document, {
@@ -25,11 +26,29 @@ export default class MyDocument extends Document<DocumentProps> {
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" />
-
           <noscript>
             <link href="./styles/aos-noscript.css" rel="stylesheet" />
           </noscript>
 
+          {/* Global site tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-LDP7FXYY20"
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-LDP7FXYY20');
+              `,
+            }}
+          />
+
+          <script />
           {/* Google Optimize */}
           <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KL3VJBM" />
         </Head>
