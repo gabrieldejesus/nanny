@@ -1,6 +1,20 @@
 # Nanny
 
-⚔ Challenge imobles
+## Description
+
+The purpose of this challenge is to give a general idea of how React works and how you can use it to create simple reactive applications. You’ll be implementing a simplified version of Hapu’s ‘Become a Nanny Share Host’ view.
+
+The concepts that gonna apply are:
+- [x] JSX
+- [x] Components, props and state
+- [x] Lifecycle Methods
+- [x] Responsive design with CSS media-queries
+- [x] API calls
+- [x] Error handling
+- [x] Loading states
+- [x] SEO & accessibility
+- [x] A/B tests
+- [x] Production builds.
 
 ### 🛠 Getting started
 
