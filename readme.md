@@ -23,7 +23,7 @@ Clone this repository and follow the steps below:
 1. `cd nanny`
 2. `yarn or npm install`
 3. `cp .env.local.example .env.local`
-4. Add all environment variables
+4. Add all environment variables (**Ask me** [here](https://www.linkedin.com/in/gabrieldejesuss)).
 5. `yarn dev`
 
 ### 🚀 Contribution
